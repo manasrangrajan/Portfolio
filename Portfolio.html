@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Manas Rangrajan Portfolio</title>
+
+  <!-- Monospace font -->
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600&display=swap" rel="stylesheet">
+  <!-- Boxicons -->
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+  <style>
+    /* Global editor theme */
+    body {
+      margin: 0;
+      font-family: 'Fira Code', monospace;
+      background: #1e1e1e;
+      color: #d4d4d4;
+      display: flex;
+    }
+
+    /* Sidebar like VS Code */
+    .sidebar {
+      background: #252526;
+      width: 60px;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-top: 1rem;
+      position: fixed;
+      left: 0;
+      top: 0;
+    }
+
+    .sidebar a {
+      color: #858585;
+      font-size: 1.6rem;
+      margin: 1.2rem 0;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+
+    .sidebar a:hover {
+      color: #569cd6;
+    }
+
+    /* Content area */
+    .main {
+      margin-left: 60px;
+      padding: 2rem;
+      flex: 1;
+    }
+
+    h1, h2, h3 {
+      color: #569cd6; /* keyword blue */
+    }
+
+    .string { color: #ce9178; }   /* string orange */
+    .number { color: #b5cea8; }   /* number green */
+    .keyword { color: #c586c0; }  /* purple */
+    .comment { color: #6a9955; font-style: italic; }
+
+    section {
+      margin-bottom: 3rem;
+      padding: 1.5rem;
+      background: #1e1e1e;
+      border-left: 3px solid #569cd6;
+      box-shadow: 0 0 5px rgba(0,0,0,0.5);
+    }
+
+    a {
+      color: #4fc1ff;
+      text-decoration: none;
+    }
+    a:hover { text-decoration: underline; }
+
+    img {
+      max-width: 200px;
+      border-radius: 8px;
+      border: 2px solid #333;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      border-top: 1px solid #333;
+      font-size: 0.9rem;
+      color: #858585;
+    }
+
+    /* Responsive */
+    @media(max-width: 768px) {
+      body { flex-direction: column; }
+      .sidebar {
+        flex-direction: row;
+        width: 100%;
+        height: 60px;
+        justify-content: center;
+        position: relative;
+      }
+      .main { margin-left: 0; margin-top: 60px; }
+    }
+  </style>
+</head>
+<body>
+  <!-- Sidebar -->
+  <div class="sidebar">
+    <a href="#home" title="Home"><i class='bx bx-home'></i></a>
+    <a href="#about" title="About"><i class='bx bx-user'></i></a>
+    <a href="#skills" title="Skills"><i class='bx bx-code-alt'></i></a>
+    <a href="#experience" title="Experience"><i class='bx bx-briefcase'></i></a>
+    <a href="#work" title="Projects"><i class='bx bx-folder'></i></a>
+    <a href="#extra" title="Hobbies"><i class='bx bx-star'></i></a>
+    <a href="#gallery" title="Gallery"><i class='bx bx-photo-album'></i></a>
+    <a href="#contact" title="Contact"><i class='bx bx-envelope'></i></a>
+  </div>
+
+  <!-- Main content -->
+  <div class="main">
+    <section id="home">
+      <h1>const <span class="keyword">name</span> = <span class="string">"Manas Rangrajan"</span>;</h1>
+      <p class="comment">// B.Sc. ITM Student | Developer | Programmer</p>
+      <p>
+        <a href="https://www.linkedin.com/in/manas-rangrajan/" target="_blank">LinkedIn</a> | 
+        <a href="https://github.com/manasrangrajan" target="_blank">GitHub</a>
+      </p>
+      <img src="https://lh3.googleusercontent.com/a/ACg8ocJ1YXl_9r1sjOIxtZOdXykLWqN4X_pIYWYwHO7W9nUnYCPuS18=s288-c-no" alt="Profile">
+    </section>
+
+    <section id="about">
+      <h2>function <span class="keyword">aboutMe</span>() {</h2>
+      <p class="comment">// returns information about Manas</p>
+      <p>
+        return <span class="string">"An enthusiastic B.Sc. ITM student with a strong passion for programming, web development, and robotics..."</span>;
+      </p>
+      <h2>};</h2>
+    </section>
+
+    <section id="skills">
+      <h2>const <span class="keyword">skills</span> = [</h2>
+      <ul>
+        <li><span class="string">"C/C++"</span>, <span class="string">"Java"</span>, <span class="string">"HTML/CSS/JS"</span></li>
+        <li><span class="string">"Excel"</span>, <span class="string">"SQL"</span>, <span class="string">"Tableau"</span></li>
+        <li><span class="string">"Embedded System"</span>, <span class="string">"IoT"</span>, <span class="string">"Arduino Programming"</span></li>
+      </ul>
+      <h2>];</h2>
+    </section>
+
+    <section id="experience">
+      <h2>let <span class="keyword">experience</span> = {</h2>
+      <p>Robotics: <span class="string">"Interned at Utkal Robotronics, where I engineered and fine-tuned robotic systems, developed software for complex tasks, and guided students in robotic programming and prototyping..."</span></p>
+      <p>Robot Projects: <span class="string">["Human Follower", "Obstacle Avoidance", "Fire Fighter", "Edge Avoidance"]</span></p>
+      <p>Achievements: <span class="string">"1st prizes in Technical Quiz & Photography at Birla Global University's Skill Fair. Won ₹6,000 cash prize!"</span></p>
+      <p>Startups: <span class="string">"Showcased Digital Health Twin at UTKARSH ODISHA Innovation Sprint, powered by AI & ML technologies."</span></p>
+      <h2>};</h2>
+    </section>
+
+    <section id="work">
+      <h2>const <span class="keyword">projects</span> = {</h2>
+      <p>{ title: <span class="string">"Tableau HR Analysis"</span>, link: <a href="https://public.tableau.com/views/HRDashboard_17541624037180/HRDetailed?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link" target="_blank">Project</a> }</p>
+      <p>{ title: <span class="string">"Runiverse"</span>, link: <a href="https://github.com/Tamasa-taniska/RUniverse.git" target="_blank">Project</a> }</p>
+      <p>{ title: <span class="string">"Digital-Inauguration"</span>, link: <a href="https://github.com/manasrangrajan/Digital-Inauguration.git" target="_blank">Project</a> }</p>
+      <h2>};</h2>
+    </section>
+
+    <section id="extra">
+      <h2>let <span class="keyword">hobbies</span> = {</h2>
+      <p><span class="string">"Cycling"</span>, <span class="string">"Travelling"</span>, <span class="string">"Singing"</span></p>
+      <h2>};</h2>
+    </section>
+
+    <section id="gallery">
+      <h2>let <span class="keyword">photos</span> = {</h2>
+      <p><span class="string">"Travel"</span>, <span class="string">"Sunrise View"</span>, <span class="string">"Photography"</span> ...</p>
+      <h2>};</h2>
+      <p class="comment">// Visit full gallery page → <a href="gallery.html" >Open Gallery</a></p>
+    </section>
+
+    <section id="contact">
+      <h2>function <span class="keyword">contact</span>() {</h2>
+      <p class="comment">// Email</p>
+      <p>return <a href="mailto:rangrajan.manas@gmail.com">"rangrajan.manas@gmail.com"</a>;</p>
+      <p class="comment">// Phone</p>
+      <p>return <span class="string">"7205242504"</span>;</p>
+      <h2>}</h2>
+    </section>
+
+    <footer>
+      <p>© 2025 Manas Rangrajan</p>
+    </footer>
+  </div>
+</body>
+</html>
